@@ -1,0 +1,572 @@
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midnight:#104f55;
+    --theme:#7300ff;
+
+ --sky:linear-gradient(120deg,#a1c4fd 0%,#c2e9fb 100%); 
+
+}
+/*--global --*/
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+li.nav-link{
+    list-style-type:none;
+}
+
+h1{
+    font-family: 'Kaushan Script', cursive, sans-serif;
+    font-size: 7rem;
+    padding: 1rem;
+    
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-style: italic;
+
+}
+.btn{
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    margin: 1.8rem;
+    background: #7300ff77;
+    color:#eaeaeaff;
+}
+button.btn:hover{
+    background:#7300ffc9;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    transition: .5s ease-in-out;
+}
+.btn-title{
+    
+        border: none;
+        padding: 1rem 3rem;
+        border-radius: 1rem;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+    
+}
+span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.theme{
+    color:whitesmoke;
+}
+
+
+
+
+/*--gloabal-end--*/
+
+
+/*--navigation--*/
+.nav{
+    
+    background-color: #eaeaea8c;
+    padding: 0 2rem;
+    height: 100px;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1.2s ease-in-out;
+   
+    
+    
+}
+div.menu{
+    justify-content: space-between;
+}
+
+ul.nav-items{
+    display: flex;
+    margin:0;
+    padding: 0rem 0.5rem;
+    
+}
+li.nav-link{
+    padding: 1.5rem 0.9rem;
+    font-size: 1.4rem;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    
+}
+li.nav-link::after{
+  bottom: 20px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #7300ff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+    
+
+}
+.nav-link:hover:after { 
+    width: 100%; 
+    left: 0px; 
+  }
+  .nav-link:hover{
+      background-color:#7300ff11;
+      
+  }
+.brand{
+
+    font-size: 1.6rem;
+    padding: 1.4rem 0;
+    text-decoration: none;
+    font-family: 'Kaushan Script', cursive, sans-serif;
+}
+.social-icons{
+    padding: 1.3rem 0;
+}
+.social-icons i:hover{
+
+    color:#7300ff;
+}
+
+div.toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.toggle-collapse i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+/*--navigation-end-*/
+/*--mainsite--*/
+.title{
+    background: url(jal\ mahal.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    overflow: hidden;
+   
+   
+    justify-content: center;
+}
+
+.background{
+    padding-top: 4rem;
+    text-align: center;
+    color:black;
+    background-color: #eaeaeacc;
+    margin: 12rem;
+
+
+}
+.title h1,h3{
+    margin:1.2rem;
+}
+button.btn-title{
+    margin: 1.8rem;
+    background: #7300ff77;
+    color:#eaeaeaff;
+   
+   
+}
+button.btn-title:hover{
+    background:#7300ffc9;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    transition: .5s ease-in-out;
+    
+}
+button.btn-title::after{
+    
+  bottom: 475px;
+  content: "";
+  display: block;
+  z-index: -100px;
+  height: 5px;
+  left: 50%;
+  position: absolute;
+  background: #7300ff;
+  transition: width 0.2s ease 0s, left 0.2s ease 0s;
+  width: 0;
+  mix-blend-mode: multiply;
+
+}
+button.btn-title:hover::after{
+    width: 47%; 
+    left: 495px; 
+    
+}
+/*--mainsite-end--*/
+/*--blogs--*/
+
+.blogs{
+    
+    background:linear-gradient(-20deg, #ffffff22 200%, #ffffff00 150%),url('john-moeses-bauan-EiwfpX6mh1w-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    height: 95vh;
+    width: 100%;
+    overflow:hidden;
+    
+
+    
+    
+}
+.owl-nav{
+    position: absolute;
+    top: 0%;
+    margin:0 auto;
+    width: 100%;
+}
+.owl-theme .owl-nav [class*='owl-']{
+    color: black;
+    background: transparent;
+    font-size: 1.5rem;
+
+}
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: black;
+}
+
+.blogs{
+    padding-top: 5rem;
+    
+
+}
+
+.blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%; 
+    margin: 4rem 2rem;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+    
+    
+  
+}
+.btn-blog{
+    padding: .7rem, 2rem;
+}
+.blog-title{
+    padding:2rem 0;
+}
+.blog-content span{
+    display: block;
+}
+
+
+/*--blogs-end--*/
+/*--about--*/
+.about{
+    
+    background: #7300ffc5;
+    padding: 3rem;
+    
+    
+}
+.grid-section{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.about h2{
+
+    margin: 0%;
+    text-align: center;
+    padding: .5rem;
+    font-family: 'Kaushan Script', cursive, sans-serif;
+    font-size: 5rem;
+    color: whitesmoke;
+
+    
+    
+    
+}
+.image-about{
+    width: 100%;
+    padding: 1rem;
+    margin: -2rem 3rem;
+    
+}
+.about p{
+    margin: 2rem 1rem;
+    padding: 6.5rem 1rem;
+    background: #eaeaeaed;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+   
+}
+/*--about-end--*/
+/*--Sitecontent--*/
+.site-content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 3rem;
+}
+.post-content img,.post-title{
+    padding: 1rem;
+    position: relative;
+}
+ .post-info{
+     display: inline-block;
+    background: var(--theme);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 3rem;
+}
+.post-content img{
+    width:100%;
+    margin-bottom: 1.5rem;
+    transition: 1.5s;
+}
+.post-content img:hover{
+   background-color:#7300ffc5;
+   transform: scale(0.9);
+    
+}
+.post-info span{
+    margin: 0.5rem;
+}
+.post-title a{
+    font-family:'Roboto', sans-serif;
+    font-size: 2rem;
+}
+.post-title p{
+    font-family:'Roboto', sans-serif;
+    font-size: 1rem;
+}
+.btn-post{
+    margin: -.1rem;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    color: var(--text-gray);
+    margin: 2rem 0rem;
+
+}
+.pagination a{
+    margin: 0.3rem;
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    font-family:'Roboto', sans-serif;
+    background-color: var(--text-gray);
+    color: whitesmoke;
+}
+
+.Category{
+    margin: 0rem 2rem;
+    padding: 3rem;
+    font-family:'Roboto', sans-serif; 
+}
+.Category h2{
+    font-family:'Kaushan Script', cursive, sans-serif;
+    font-size: 2rem;
+ text-align: center;
+ color: var(--text-gray);    
+}
+
+.Category a{
+    color: whitesmoke;
+}
+.Category .list-items{
+    background: var(--text-gray);
+    color: whitesmoke;
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.popular{
+    margin: 0rem .5rem;
+    padding: 0rem 6rem;
+    font-family:'Kaushan Script', cursive, sans-serif;
+    font-size: 1.5rem;
+    color: var(--text-gray);
+    text-align: center;
+}
+
+.pstitle{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin:  1.5rem;
+    text-align: center;
+}
+
+.newsletter{
+    padding: 2rem;
+    margin: 0rem 5rem;
+    
+}
+.newsletter h2{
+    font-family: 'Kaushan Script', cursive, sans-serif;
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 0rem .5rem;
+    margin: 1rem 0rem;
+    color: var(--text-gray);
+}
+.input{
+    padding: 1rem 2rem;
+    margin:0rem .5rem;
+    text-align: left;
+}
+.form-btn{
+    padding: 1rem 2rem;
+    border-radius: 0rem;
+    text-align: center;
+    margin:1rem 0.5rem;
+}
+.popular-tags{
+    padding: 5rem 0;
+    margin: 0rem 5rem;
+    
+}
+.popular-tags h2{
+    font-family: 'Kaushan Script', cursive, sans-serif;
+    font-size: 2.5rem;
+    padding: 1rem .5rem;
+    margin: 1rem 0rem;
+    color: var(--text-gray);
+}
+.tg{
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    background-color: var(--theme);
+    padding: .5rem .5rem;
+    border-radius: 3rem;
+    margin: .5rem .3rem;
+}
+/*--Sitecontentend--*/
+/*--Footer--*/
+.foot{
+    background-color: var(--bg-color);
+    height: 100%;
+    position: relative;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-size: medium;
+    font-family:'Roboto', sans-serif;
+    color: white;
+}
+.about-us p{
+    color: var(--text-gray);
+    padding: 1rem 0rem;
+}
+.letter{
+    display: inline-block;
+    padding: .5rem .7rem;
+    border: none;
+}
+.letter p{
+    color: var(--text-gray);
+}
+.btn-el{
+    padding: .6rem;
+    background-color: #7300ff;
+    border: none;
+}
+.el{
+
+    padding: .5rem 1rem;
+} 
+
+.container>div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+.inst{
+    display: inline-block;
+    width: 30%;
+    height: 45%;
+    margin: .3rem .4rem;
+}
+.follow i{
+    padding: .5rem;
+ color: whitesmoke;
+}
+.copyright p{
+    color: var(--text-gray);
+}
+.til{
+    padding: 0 .5rem;
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 1rem;
+}
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.move-up{
+    color: whitesmoke;
+    position: absolute;
+    right: 6%;
+    top: 50%;
+
+}
+.move-up:hover{
+    color: #7300ff;
+}
+/*--FooterEND--*/
+
+
+/*--media query for screen less then 750--*/
+@media only screen and (max-width: 750px) {
+
+    .menu,.nav-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    div.toggle-collapse{
+        display: initial;
+    }
+
+    .collapse{
+        height: 35rem;
+
+    }
+
+
+
+}
+/*--END--media query for screen less then 750--*/
